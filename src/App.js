@@ -38,8 +38,12 @@ const App = () => {
       <div className="searchbox">
         <Search onSearchChange={handleOnSearchChange} />
       </div>
-      <div className="current-container" >{currentWeather && <CurrentWeather data={currentWeather} />}</div>
-      <div className="forecast-container">{forecast && <Forecast data={forecast} />}</div>
+      <div className="current-container">
+        {currentWeather && <CurrentWeather data={currentWeather} />}
+      </div>
+      <div className="forecast-container">
+        {forecast && <Forecast data={forecast} />}
+      </div>
     </div>
   );
 };

@@ -4,7 +4,7 @@
 
 WeatherApp is a responsive weather application. It shows both the current weather and forecasts for the up coming days in any location.
 
-Some screenshoot from different device.
+Some view from different device.
 
   <span>
   <img width="" height="220" src="./src/assets/img/desktop.JPG">
@@ -20,7 +20,7 @@ Some screenshoot from different device.
 - See current weather in the right.
 - See up coming days weather in the left.
 - Clik on the up coming days buttons for the details.
--  ✨Perfect  ✨
+- ✨Perfect ✨
 
 ## Features
 
@@ -34,24 +34,25 @@ Some screenshoot from different device.
   <span>
   <img width="20" height="20" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg">
 </span>  React.JS - JavaScript library for for building UI component
-
+  <br>
   <span>
   <img width="20" height="20" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg">
 </span>  SASS - CSS pre-processor
 
 ## Prerequisites
 
-WeatherApp requires [Node.js](https://nodejs.org)  to run.
+WeatherApp requires [Node.js](https://nodejs.org) to run.
 
 ## Installing
 
 Install the dependencies.
 
-
 ```sh
 npm install
 ```
+
 Runs the app in the development mode.
+
 ```sh
 npm start
 ```

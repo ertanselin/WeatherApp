@@ -4,13 +4,11 @@
 body {
   font-family: v.$primary-font;
   background-color: v.$color8;
-
 }
 
 .fullpage {
   position: relative;
-
-
+  
   .image {
     border-radius: 20px;
     background-size: cover;
@@ -100,4 +98,3 @@ body {
     }
   }
 }
-
