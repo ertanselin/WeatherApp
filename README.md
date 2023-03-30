@@ -17,9 +17,8 @@ Some view from different device.
 </span>
 
 - Enter a city name in the search box at the top of the page.
-- See current weather in the right.
-- See up coming days weather in the left.
-- Clik on the up coming days buttons for the details.
+- See current weather at the top and up coming days at the bottom.
+- Clik on the upcoming days buttons for the details.
 - ✨Perfect ✨
 
 ## Features
@@ -33,7 +32,7 @@ Some view from different device.
 
   <span>
   <img width="20" height="20" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg">
-</span>  React.JS - JavaScript library for for building UI component
+</span>  React.JS - JavaScript library for building UI component
   <br>
   <span>
   <img width="20" height="20" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg">

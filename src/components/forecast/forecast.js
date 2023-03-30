@@ -26,7 +26,7 @@ const Forecast = ({ data }) => {
 
   return (
     <div className="forecast-page">
-      <div className="title">UP COMING DAYS</div>
+      <div className="title">UPCOMING DAYS</div>
       <div>
         <label className="forecast"></label>
         <Accordion allowZeroExpanded>
