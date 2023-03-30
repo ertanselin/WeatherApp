@@ -1,0 +1,103 @@
+@use "../../assets/scss/variables" as v;
+@use "../../assets/scss/mixins" as m;
+
+body {
+  font-family: v.$primary-font;
+  background-color: v.$color8;
+
+}
+
+.fullpage {
+  position: relative;
+
+
+  .image {
+    border-radius: 20px;
+    background-size: cover;
+    @include m.flex();
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+  }
+}
+
+.searchbox {
+  z-index: 5;
+}
+
+.current-weather {
+  @include m.bg(color, v.$color2);
+  border-radius: 20px;
+  color: v.$color2;
+  @include m.flex($gap: 0rem);
+  position: relative;
+
+  &::before {
+    content: "";
+    @include m.bg(color, v.$color4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 20px;
+    z-index: 3;
+  }
+
+  .top {
+    z-index: 4;
+    @include m.flex($fd: row);
+    margin-bottom: 1rem;
+
+    .left {
+      margin: 1rem 0rem 0rem 1rem;
+
+      h3,
+      h5 {
+        margin: 0.5rem;
+        text-shadow: 0 0 5px v.$color1;
+      }
+    }
+
+    .right {
+      @include m.flex($jc: center, $ai: flex-end);
+      margin-right: 0.5rem;
+
+      h2,
+      h4 {
+        margin: 0rem 1.5rem 0rem 0rem;
+        text-shadow: 0 0 5px v.$color1;
+      }
+      h2 {
+        font-size: 1.8rem;
+        text-align: center;
+      }
+      h4 {
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  .bottom {
+    padding: 1rem 2rem 2rem 2rem;
+    @include m.flex($jc: flex-end, $gap: 0.5rem);
+    z-index: 4;
+    text-shadow: 0 0 5px v.$color1;
+
+    .parameter-row {
+      @include m.flex($fd: row, $gap: 2rem);
+
+      .parameter-label {
+        color: v.$color5;
+      }
+
+      .parameter-value {
+        color: v.$color2;
+      }
+    }
+  }
+}
+

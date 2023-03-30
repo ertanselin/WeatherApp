@@ -1,0 +1,121 @@
+@use "../../assets/scss/variables" as v;
+@use "../../assets/scss/mixins" as m;
+
+.title {
+  margin-left: 2rem;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 0px 7px v.$color6;
+  border-radius: 20px;
+}
+
+.forecast-page {
+  .forecast {
+    font-size: 1rem;
+    font-weight: 700;
+  }
+
+  .daily-item {
+    padding: 0.3rem 1.2rem;
+    background-image: linear-gradient(to top, v.$color2, v.$color7);
+    border-radius: 20px;
+    height: 2rem;
+    margin: 0.3rem;
+    @include m.flex($fd: row, $ai: center);
+    text-align: center;
+    cursor: pointer;
+
+    &:hover {
+      background-image: linear-gradient(to top, v.$color1, v.$color6);
+      color: v.$color2;
+      font-size: 1.1rem;
+      transition: font-size 0.4s;
+    }
+
+    .icon-small {
+      width: 2.5rem;
+    }
+
+    .min-max {
+      cursor: inherit;
+      margin-right: 0.5rem;
+      width: 7rem;
+    }
+
+    .day {
+      cursor: inherit;
+      font-weight: 600;
+      margin-left: 1.5rem;
+    }
+
+    .description {
+      cursor: inherit;
+      margin-right: 2rem;
+      flex: 1 1;
+      text-align: right;
+    }
+  }
+
+  .daily-details-grid {
+    column-gap: 0.5rem;
+    display: grid;
+
+    grid-template-columns: auto auto;
+    padding: 0.3rem 1.2rem;
+
+    .daily-details-grid-item {
+      @include m.flex($fd: row, $ai: center);
+      height: 1.3rem;
+
+      label:first-child {
+        color: #757575;
+      }
+
+      label:last-child {
+        color: #212121;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .forecast-page {
+    .daily-item {
+      font-size: 0.9rem;
+      &:hover {
+        background-image: linear-gradient(to top, v.$color1, v.$color6);
+        color: v.$color2;
+        transition: font-size 0.4s;
+        font-size: 1rem;
+      }
+      .description {
+        opacity: 0;
+      }
+
+      .min-max {
+        cursor: inherit;
+        margin-right: 0.5rem;
+        width: 5rem;
+      }
+    }
+
+    .daily-details-grid {
+      font-size: 0.9rem;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .forecast-page {
+    .daily-item {
+      font-size: 0.8rem;
+
+      .min-max {
+        width: 6rem;
+      }
+    }
+    .daily-details-grid {
+      font-size: 0.8rem;
+    }
+  }
+}

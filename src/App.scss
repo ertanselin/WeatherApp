@@ -1,0 +1,41 @@
+@use "./assets/scss/variables" as v;
+@use "./assets/scss/mixins" as m;
+
+.container {
+  @include m.flex($jc: center, $gap: 1rem, $ai: center);
+  margin: 15px auto;
+  flex-wrap: wrap;
+  flex: 1 2;
+}
+
+@media screen and (min-width: 360px) {
+  .container {
+    .searchbox {
+      width: 95vw;
+    }
+
+    .current-container {
+      width: 95vw;
+    }
+
+    .forecast-container {
+      width: 95vw;
+    }
+  }
+}
+
+@media screen and (min-width: 510px) {
+  .container {
+    .searchbox {
+      width: 500px;
+    }
+
+    .current-container {
+      width: 500px;
+    }
+
+    .forecast-container {
+      width: 500px;
+    }
+  }
+}
