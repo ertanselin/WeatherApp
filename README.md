@@ -2,7 +2,7 @@
 
 ## Getting Started
 
-WeatherApp is a responsive weather application. It shows both the current weather and forecasts for the up coming days in any location.
+WeatherApp is a responsive weather application. It shows both the current weather and forecasts for the upcoming days in any location.
 
 Some view from different device.
 
@@ -17,7 +17,7 @@ Some view from different device.
 </span>
 
 - Enter a city name in the search box at the top of the page.
-- See current weather at the top and up coming days at the bottom.
+- See current weather at the top and upcoming days at the bottom.
 - Clik on the upcoming days buttons for the details.
 - ✨Perfect ✨
 
@@ -25,7 +25,7 @@ Some view from different device.
 
 - Auto-complete of the city names with a population of 100,000 or more.
 - Display detailed information such as temperature, feels like, wind, humidity, and pressure, as well as current weather conditions.
-- Display of weather forecasts and detail information such as temprature, feels like, wind speed, sea level pressure, cloudiness, humidity and pressure for the up coming 6 days.
+- Display of weather forecasts and detail information such as temprature, feels like, wind speed, sea level pressure, cloudiness, humidity and pressure for the upcoming 6 days.
 - Animated background that changes according to current weather information.
 
 ## Built with
